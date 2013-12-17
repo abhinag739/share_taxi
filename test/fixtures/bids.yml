@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  taxi_id: 1
+  amount: 1
+
+two:
+  taxi_id: 1
+  amount: 1

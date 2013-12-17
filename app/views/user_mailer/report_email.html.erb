@@ -1,0 +1,6 @@
+<% @top_5_bids.each do |bid| %>
+
+  User Email: <%= bid.user ? bid.user.email : "" %>
+  Amount: <%= bid.amount %>
+
+<% end %>

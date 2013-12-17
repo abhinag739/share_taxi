@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  operator: MyString
+  hire_time: 
+  source: MyString
+  destination: MyString
+
+two:
+  operator: MyString
+  hire_time: 
+  source: MyString
+  destination: MyString

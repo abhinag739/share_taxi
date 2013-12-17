@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Taxi:</b>
+  <%= @bid.taxi_id %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @bid.amount %>
+</p>
+
+
+<%= link_to 'Edit', edit_taxi_bid_path(@taxi.id, @bid.id) %> |
+<%= link_to 'Back', taxi_bids_path(@taxi)%>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Operator:</b>
+  <%= @taxi.operator %>
+</p>
+
+<p>
+  <b>Hire time:</b>
+  <%= @taxi.hire_time %>
+</p>
+
+<p>
+  <b>Source:</b>
+  <%= @taxi.source %>
+</p>
+
+<p>
+  <b>Destination:</b>
+  <%= @taxi.destination %>
+</p>
+
+
+<%= link_to 'Edit', edit_taxi_path(@taxi) %> |
+<%= link_to 'Back', taxis_path %>

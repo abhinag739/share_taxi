@@ -1,0 +1,24 @@
+<h1>Listing bids</h1>
+
+<table>
+  <tr>
+    <th>Taxi</th>
+    <th>Amount</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bids.each do |bid| %>
+  <tr>
+    <td><%= bid.taxi_id %></td>
+    <td><%= bid.amount %></td>
+    <td><%= link_to 'Show', taxi_bid_path(bid.taxi, bid) %></td>
+    <td><%= link_to 'Edit', edit_taxi_bid_path(bid.taxi, bid) %></td>
+    <td><%= link_to 'Destroy', taxi_bid_path(bid.taxi, bid), confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

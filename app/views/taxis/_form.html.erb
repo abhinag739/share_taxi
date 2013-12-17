@@ -1,0 +1,64 @@
+<%= form_for(@taxi) do |f| %>
+  <% if @taxi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@taxi.errors.count, "error") %> prohibited this taxi from being saved:</h2>
+
+      <ul>
+      <% @taxi.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :operator %><br />
+    <%= f.text_field :operator %>
+  </div>
+  <div class="field">
+    <%= f.label :hire_time %><br />
+    <%= f.text_field :hire_time, :id=>"datepicker" %>
+  </div>
+  <div class="field">
+    <%= f.label :source_street %><br />
+    <%= f.text_field :source_street  %>
+  </div>
+  <div class="field">
+    <%= f.label :source_city %><br />
+    <%= f.text_field :source_city %>
+  </div>
+
+  <div class="field">
+    <%= f.label :source_state %><br />
+    <%= f.text_field :source_state %>
+  </div>
+
+  <div class="field">
+    <%= f.label :source_country %><br />
+    <%= f.text_field :source_country %>
+  </div>
+
+  <div class="field">
+    <%= f.label :destination_street %><br />
+    <%= f.text_field :destination_street %>
+  </div>
+  <div class="field">
+    <%= f.label :destination_city %><br />
+    <%= f.text_field :destination_city %>
+  </div>
+
+  <div class="field">
+    <%= f.label :destination_state %><br />
+    <%= f.text_field :destination_state %>
+  </div>
+
+  <div class="field">
+    <%= f.label :destination_country %><br />
+    <%= f.text_field :destination_country %>
+  </div>
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
